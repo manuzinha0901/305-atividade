@@ -62,13 +62,34 @@ else if  (numeros === 5){
 else if  (numeros === 6){
     console.log(`o dia ${n6} é sexta-feira`);
 }
-else if  (numeros === 7){
-    console.log(`o dia ${n7} é sábado `);
+ else if  (numeros === 7){
+     console.log(`o dia ${n7} é sábado `);
 }
 
-else {
-    console.log("ERRO")}
+ else {
+     console.log("ERRO")}
 
+let idade = Number(prompt("Digite sua idade"));
+    if(idade >= 25 && idade <= 60){
+        let salario = Number (prompt("Digite seu salário"));
+        if( salario >= 2000){
+            let emprestimo = Number(prompt("Digite o valor do emprestimo"));
+            let limite = salario * 10;
+
+            if(emprestimo > limite){
+                alert("O valor do emprestimo nao pode ser 10x maior que o salario")
+            } else {
+                alert("Emprestimo aprovado");
+            }
+
+        } else {
+            alert("Emprestimo negado pelo salário.")
+        }
+
+    } else {
+        alert("Emprestimo negado pela idade")
+    } 
+    
 
 
 
